@@ -12,7 +12,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/data/')
+    fetch('https://abhee-backend.onrender.com/')
       .then(res => res.json())
       .then(json => {
         setRawData(json.data);
